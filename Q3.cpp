@@ -175,10 +175,16 @@ int main(){
         torta.key = i;  //key é a estrurtura do datatype que recebe o número da torta
         torta.value = pf;   //value é quem recebe o valor do pf no struct da torta
         
-        insert(root,torta);
+        insert(root,torta);    //inserção na árvore
      }
      
      cin >> pfmin >> pfmax;
+     
+     for(int i = 0; i < t; i++){      //verificar se preço da torta está na faixa
+         if()
+         
+         remove
+     }
      
      
 
