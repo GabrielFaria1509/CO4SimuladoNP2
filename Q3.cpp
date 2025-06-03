@@ -151,23 +151,35 @@ int main(){
     int a; //altura da torta
     int d; //diametro da porta
     int p; //peso torta
-    int pfmin;
-    int pfmax;
+    int pfmin;   //preço mínimo
+    int pfmax;   //peço máx
+    int pf; //preço da torta
+    int valoresaceitos;
     
     cin >> t;
+    
     
     for(int i = 0; i < t; i++){
         cin >> a.x >> a.y;
         cin >> b.x >> b.y;
         cin >> c.x >> c.y;
         cin >> d.c >> d.y;
+        cin >> p;
         
         em = distancia(a,b);
         d = distancia(c,d);
         a = distancia(a,c);
         
+        pf = (em*p*a)+d+a;
         
-    }
-    
+        torta.key = i;  //key é a estrurtura do datatype que recebe o número da torta
+        torta.value = pf;   //value é quem recebe o valor do pf no struct da torta
+        
+        insert(root,torta);
+     }
+     
+     cin >> pfmin >> pfmax;
+     
+     
 
 }
